@@ -1,35 +1,82 @@
 # Polygon Area Calculator
 
-Projekt wykonany w ramach kursu **freeCodeCamp – Scientific Computing with Python**.
+Project completed as part of the **freeCodeCamp – Scientific Computing with Python** course.
 
-## Opis
+## Description
 
-Celem projektu było stworzenie klas `Rectangle` i `Square`, które modelują odpowiednie figury geometryczne. Klasy umożliwiają m.in. obliczenie pola, obwodu, przekątnej, a także wygenerowanie tekstowej reprezentacji graficznej kształtu.
+The goal of this project was to implement `Rectangle` and `Square` classes that model basic geometric shapes.
 
-Klasa `Square` dziedziczy po klasie `Rectangle`, ale zawiera dodatkowe metody specyficzne dla kwadratu.
+The classes provide methods for calculating properties such as area, perimeter, and diagonal length, as well as generating a simple text-based representation of the shape.
 
----
-
-## Klasa `Rectangle`
-
-### Metody:
-
-- `set_width(new_width)` – ustawia nową szerokość
-- `set_height(new_height)` – ustawia nową wysokość
-- `get_area()` – zwraca pole (width * height)
-- `get_perimeter()` – zwraca obwód (2 × width + 2 × height)
-- `get_diagonal()` – zwraca długość przekątnej
-- `get_picture()` – zwraca tekstową reprezentację prostokąta z `*`  
-  (maksymalnie 50 × 50 – w przeciwnym razie zwraca `"Too big for picture."`)
-- `get_amount_inside(other_shape)` – ile razy dany kształt mieści się w tym prostokącie (bez rotacji)
-- `__str__()` – zwraca np. `Rectangle(width=10, height=5)`
+The `Square` class inherits from `Rectangle` and extends its functionality with behavior specific to squares.
 
 ---
 
-## Klasa `Square` (dziedziczy po `Rectangle`)
+## `Rectangle` Class
 
-### Dodatkowe metody:
+### Methods
 
-- `set_side(side)` – ustawia jednocześnie wysokość i szerokość
-- Nadpisane metody `set_width` i `set_height`, aby również zmieniały oba wymiary
-- `__str__()` – zwraca np. `Square(side=9)`
+- `set_width(new_width)` – sets the width  
+- `set_height(new_height)` – sets the height  
+- `get_area()` – returns the area (`width * height`)  
+- `get_perimeter()` – returns the perimeter (`2 * width + 2 * height`)  
+- `get_diagonal()` – returns the diagonal length  
+- `get_picture()` – returns a text-based representation of the rectangle using `*`  
+  (maximum size: 50 × 50, otherwise returns `"Too big for picture."`)  
+- `get_amount_inside(other_shape)` – calculates how many times another shape can fit inside the rectangle (without rotation)  
+- `__str__()` – returns a string representation, e.g. `Rectangle(width=10, height=5)`  
+
+---
+
+## `Square` Class (inherits from `Rectangle`)
+
+### Additional functionality
+
+- `set_side(side)` – sets both width and height  
+- overridden `set_width` and `set_height` methods to keep both dimensions equal  
+- `__str__()` – returns a string representation, e.g. `Square(side=9)`  
+
+---
+
+## Example
+
+```python
+rect = Rectangle(10, 5)
+print(rect.get_area())
+
+rect.set_height(3)
+print(rect.get_perimeter())
+print(rect)
+print(rect.get_picture())
+
+sq = Square(9)
+print(sq.get_area())
+
+sq.set_side(4)
+print(sq.get_diagonal())
+print(sq)
+print(sq.get_picture())
+
+rect.set_height(8)
+rect.set_width(16)
+print(rect.get_amount_inside(sq))
+print(Rectangle(4,8).get_amount_inside(Rectangle(3, 6)))
+
+Output:
+50
+26
+Rectangle(width=10, height=3)
+**********
+**********
+**********
+
+81
+5.656854249492381
+Square(side=4)
+****
+****
+****
+****
+
+8
+1
