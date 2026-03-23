@@ -33,7 +33,7 @@ Algorithm that converts input images into string threading instructions, support
 My largest project, developed over 6+ months.  
 A fully automated system for creating physical string art pieces.
 
-<img src="02-string-art-machine/pictures/string_art_machine_0.jpg" width="400"/>
+<img src="02-string-art-machine/pictures/string_art_machine_1.jpg" width="400"/>
 
 **Scope:**
 - mechanical design (CAD)
