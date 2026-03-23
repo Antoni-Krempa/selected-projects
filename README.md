@@ -91,6 +91,7 @@ Industrial control system with a custom SCADA application developed in Python.
 - HMI panel
 
 **What I learned:**
+- developing PLC programs in Siemens TIA Portal
 - PLC–software integration
 - tuning PID controllers using the Ziegler–Nichols method
 - industrial communication protocols
