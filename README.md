@@ -9,7 +9,7 @@ Each project folder contains a detailed description, implementation overview and
 Algorithm that converts input images into string threading instructions.
 
 
-<img src="01-string-art-generator/pictures/Einstein.PNG" width="40%"/> <img src="01-string-art-generator/pictures/world_map_simple.png" width="40%"/>
+<img src="01-string-art-generator/pictures/Einstein.PNG" height="400"/> <img src="01-string-art-generator/pictures/world_map_simple.png" height="400"/>
 
 
 **Tech stack:**
