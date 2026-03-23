@@ -26,7 +26,7 @@ This helps reinforce knowledge, improve retention, and build problem-solving ski
 - Bookbot
 
  
-[[Boot.dev](https://boot.dev) ](https://www.boot.dev/u/malephase52)
+[my profile](https://www.boot.dev/u/malephase52)
 
 
 ## What is freeCodeCamp?
