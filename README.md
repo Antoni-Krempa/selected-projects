@@ -5,8 +5,8 @@ Each project folder contains a detailed description, implementation overview and
 
 ---
 
-## 🔥 String Art Generator
-Algorithm that converts input images into string threading instructions, supporting both grayscale and color images.
+## String Art Generator
+Algorithm that converts input images into string threading instructions to visualisation.
 
 
 <img src="01-string-art-generator/pictures/Einstein.PNG" width="300"/> <img src="01-string-art-generator/pictures/world_map_simple.png" width="450"/>
@@ -14,7 +14,7 @@ Algorithm that converts input images into string threading instructions, support
 
 
 **Key features:**
-- custom algorithm for line selection and optimization
+- custom algorithm for line selection 
 - separate approaches for grayscale and color processing
 - GPU acceleration using CuPy
 - basic GUI for user interaction
@@ -29,7 +29,7 @@ Algorithm that converts input images into string threading instructions, support
 
 ---
 
-## 🧠 String Art Machine
+## String Art Machine
 My largest project, developed over 6+ months.  
 A fully automated system for creating physical string art pieces.
 
@@ -50,7 +50,7 @@ A fully automated system for creating physical string art pieces.
 
 ---
 
-## ⚙️ PLC–Python SCADA Integration
+## PLC Python SCADA Integration
 Industrial-style control system developed during my internship at Grupa Azoty Automatyka.
 
 <img src="03-plc-python-scada-integration/pictures/control_system.jpg" width="300"/> <img src="03-plc-python-scada-integration/pictures/SCADA.png" width="300"/>
@@ -70,7 +70,11 @@ Industrial-style control system developed during my internship at Grupa Azoty Au
 
 ---
 
-## 🧪 Projects from Courses
+## Coloured String Art
+
+
+
+## Projects from Courses
 Collection of smaller projects developed while completing Boot.dev and FreeCodeCamp courses.
 
 **Includes:**
