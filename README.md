@@ -11,6 +11,8 @@ Algorithm that converts input images into string threading instructions, support
 
 <img src="01-string-art-generator/pictures/Einstein.PNG" width="400"/> <img src="01-string-art-generator/pictures/world_map_simple.png" width="400"/>
 
+![Map](01-string-art-generator/pictures/world_map_simple.png)
+
 **Key features:**
 - custom algorithm for line selection and optimization
 - separate approaches for grayscale and color processing
