@@ -5,13 +5,12 @@ Each project folder contains a detailed description, implementation overview and
 
 ---
 
-## 🔥 String Art Generator
+## String Art Generator
 Algorithm that converts input images into string threading instructions.
 
-<p align="center">
-  <img src="01-string-art-generator/pictures/Einstein.PNG" width="40%"/>
-  <img src="01-string-art-generator/pictures/world_map_simple.png" width="40%"/>
-</p>
+
+<img src="01-string-art-generator/pictures/Einstein.PNG" width="40%"/> <img src="01-string-art-generator/pictures/world_map_simple.png" width="40%"/>
+
 
 **Tech stack:**
 - Python
@@ -33,12 +32,12 @@ Algorithm that converts input images into string threading instructions.
 
 ---
 
-## 🧠 String Art Machine
+## String Art Machine
 Fully automated system for creating physical string art pieces, developed over 6+ months.
 
-<p align="center">
-  <img src="02-string-art-machine/pictures/string_art_machine_1.jpg" width="50%"/>
-</p>
+
+<img src="02-string-art-machine/pictures/string_art_machine_1.jpg" width="50%"/>
+
 
 **Tech stack:**
 - C++
@@ -59,13 +58,12 @@ Fully automated system for creating physical string art pieces, developed over 6
 
 ---
 
-## ⚙️ PLC–Python SCADA Integration
+## PLC–Python SCADA Integration
 Industrial control system with a custom SCADA application developed in Python.
 
-<p align="center">
-  <img src="03-plc-python-scada-integration/pictures/control_system.jpg" width="40%"/>
-  <img src="03-plc-python-scada-integration/pictures/SCADA.png" width="40%"/>
-</p>
+
+<img src="03-plc-python-scada-integration/pictures/control_system.jpg" width="40%"/> <img src="03-plc-python-scada-integration/pictures/SCADA.png" width="40%"/>
+
 
 **Tech stack:**
 - Siemens PLC (TIA Portal)
@@ -87,7 +85,7 @@ Industrial control system with a custom SCADA application developed in Python.
 
 ---
 
-## 🎨 Coloured String Art
+## Coloured String Art
 Extension of the string art algorithm to support full-color image processing.
 
 **Tech stack:**
@@ -104,7 +102,7 @@ Extension of the string art algorithm to support full-color image processing.
 
 ---
 
-## 🧪 Projects from Courses
+## Projects from Courses
 Collection of smaller projects developed during Boot.dev and FreeCodeCamp courses.
 
 **Tech stack:**
