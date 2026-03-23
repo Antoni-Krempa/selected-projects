@@ -1,17 +1,22 @@
 # Time Calculator
 
-Projekt stworzony w ramach kursu **freeCodeCamp – Scientific Computing with Python**.
+Project completed as part of the **freeCodeCamp – Scientific Computing with Python** course.
 
-## Opis
+## Description
 
-Funkcja `add_time` dodaje czas trwania (`duration`) do zadanego czasu początkowego (`start`) w formacie 12-godzinnym (AM/PM). Opcjonalnie można także podać dzień tygodnia. Funkcja zwraca nową godzinę w tym samym formacie, uwzględniając również:
+The `add_time` function adds a duration to a given start time in 12-hour format (AM/PM).  
+An optional weekday can also be provided.
 
-- przekroczenie północy (zmiana dnia),
-- odpowiedni dzień tygodnia po dodaniu czasu,
-- adnotację `(next day)` lub `(n days later)`.
+The function returns the resulting time in the same format, correctly handling:
 
-## Przykład działania
+- day transitions (crossing midnight),
+- updating the day of the week,
+- annotations such as `(next day)` or `(n days later)`.
+
+---
+
+## Example
 
 ```python
-print(add_time('3:30 PM', '22:12', 'Monday'))
-# Zwraca: 1:42 PM, Tuesday (next day)
+print(add_time("3:30 PM", "22:12", "Monday"))
+# Returns: 1:42 PM, Tuesday (next day)
