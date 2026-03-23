@@ -88,6 +88,7 @@ Industrial control system with a custom SCADA application developed in Python.
 - data storage and visualization
 - custom SCADA interface
 - calibratied control system using PID regulation
+- HMI panel
 
 **What I learned:**
 - PLC–software integration
