@@ -132,11 +132,6 @@ Collection of smaller projects developed during Boot.dev and FreeCodeCamp course
 **Tech stack:**
 - Python
 
-**Features:**
-- fundamental programming exercises
-- data structures & algorithms
-- small applications and utilities
-
 **What I learned:**
 - core computer science and programming concepts
 - object-oriented programming
