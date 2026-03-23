@@ -1,23 +1,74 @@
 # selected-projects
 Repository for showcasing selected projects developed in private repositories
 
-Check out each project folder for more detailed description!
+Each project folder contains a detailed description, implementation overview and visuals.
 
-1. string-art-generator
+---
 
-The goal of the project was to create an algorithm that converts pictures into threading instructions that can be visualised. Two different approchaes were developed for black and white pictures and also one for coloured pictures. Basic GUI was created as well. This project required me to solve a real problem without really knowing good solution. It teached me a lot about time and space optimalizations, numerical methods and overall building software in Python using specialised libraries such as CuPy.
+## 🔥 String Art Generator
+Algorithm that converts input images into string threading instructions, supporting both grayscale and color images.
 
+**Key features:**
+- custom algorithm for line selection and optimization
+- separate approaches for grayscale and color processing
+- GPU acceleration using CuPy
+- basic GUI for user interaction
 
-2. string-art-machine
+**What I learned:**
+- performance optimization (time & memory)
+- numerical methods and image processing
+- building efficient Python applications
 
-This is my biggest project that I was developing for over half a year. Ir resulted in a machine that fully automates process of making physical string art pieces. It gave me a lot of practical skills of CAD projecting, building microcontroler software for real use in C++, working with sometimes noncooperative electronics and mechanics and overall thinking of creative problem solutions.
+👉 [View project](./string-art-generator)
 
-3. plc-python-scada-integration
+---
 
-The project was created during my internship in Grupa Azoty Automatyka. A simple control system and HMI was build from scratch using Siemens PLC and TIAportal. Then a simple Scada was made in Python to visualise and control system from control panel and save data to SQL database. The connection was established using snap7 library.
+## 🧠 String Art Machine
+My largest project, developed over 6+ months.  
+A fully automated system for creating physical string art pieces.
 
+**Scope:**
+- mechanical design (CAD)
+- embedded software (C++)
+- electronics integration
+- full system assembly and testing
 
-4. projects-from-courses
+**Highlights:**
+- custom-built machine for real-world use
+- integration of hardware and software
+- solving non-trivial engineering problems
 
-This folder contains training projects that i developed while completing courses from Boot.dev and FreeCodeCamp that teached me fundamentals of computer science and programming. Note that some of them are not as clean as code should look like and some were guided.
+👉 [View project](./string-art-machine)
+
+---
+
+## ⚙️ PLC–Python SCADA Integration
+Industrial-style control system developed during my internship at Grupa Azoty Automatyka.
+
+**Tech stack:**
+- Siemens PLC (TIA Portal)
+- Python (custom SCADA)
+- SQL database
+- snap7 communication
+
+**Features:**
+- real-time data acquisition from PLC
+- data storage and visualization
+- custom HMI/SCADA interface
+
+👉 [View project](./plc-python-scada-integration)
+
+---
+
+## 🧪 Projects from Courses
+Collection of smaller projects developed while completing Boot.dev and FreeCodeCamp courses.
+
+**Includes:**
+- fundamental programming exercises
+- data structures & algorithms
+- API and backend basics
+
+> Note: some projects are guided and focus on learning fundamentals rather than production-level code.
+
+👉 [View project](./projects-from-courses)
 
