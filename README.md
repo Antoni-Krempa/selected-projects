@@ -9,7 +9,7 @@ Each project folder contains a detailed description, implementation overview and
 Algorithm that converts input images into string threading instructions, supporting both grayscale and color images.
 
 
-<img src="01-string-art-generator/pictures/Einstein.PNG" width="400"/> <img src="01-string-art-generator/pictures/world_map_simple.png" width="600"/>
+<img src="01-string-art-generator/pictures/Einstein.PNG" width="400"/> <img src="01-string-art-generator/pictures/world_map_simple.png" width="570"/>
 
 
 
