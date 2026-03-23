@@ -1,12 +1,12 @@
 # selected-projects
 Repository for showcasing selected projects developed in private repositories
 
-Each project folder contains a detailed description, implementation overview and visuals.
+Each project folder contains a detailed description, overview and visuals.
 
 ---
 
 ## String Art Generator
-Algorithm that converts input images into string threading instructions.
+Algorithm that converts input images into string threading instructions and visualises result.
 
 
 <img src="01-string-art-generator/pictures/Einstein.PNG" height="320"/> <img src="01-string-art-generator/pictures/world_map_simple.png" height="312"/>
@@ -16,17 +16,19 @@ Algorithm that converts input images into string threading instructions.
 - Python
 - NumPy / CuPy
 - PIL / image processing
+- tkinter
 
 **Features:**
-- custom algorithm for line selection
-- separate approaches for grayscale and color images
+- two different approaches for line selection
 - GPU acceleration using CuPy
+- various precomputing methods for main loop optimazation
 - basic GUI for user interaction
 
 **What I learned:**
 - performance optimization (time & memory)
 - numerical methods and image processing
 - designing efficient algorithms
+- solving real problem
 
 👉 [View project](./01-string-art-generator)
 
@@ -42,17 +44,26 @@ Fully automated system for creating physical string art pieces, developed over 6
 **Tech stack:**
 - C++
 - Arduino / microcontrollers
-- CAD (mechanical design)
+- CAD designing
+- KiCad
 
 **Features:**
-- automated string winding process
-- custom-built mechanical system
-- integration of electronics and control logic
+- automated string winding and hole drilling process
+- custom-built mechanical system based on servo stepper motor
+- integration of electronics, mechanics and control logic
 
 **What I learned:**
-- hardware-software integration
+- designing components for CNC machining and 3D printing
+- developing a complete system to solve a real-world problem
+- performing engineering calculations
+- efficient control of stepper and servo motors
 - working with real-world constraints (mechanics, electronics)
-- designing complete engineering systems
+- developing microcontroller software
+- designing electrical schematics
+- selecting and sourcing appropriate components
+- coming up with creative solutions to problems
+- planning and managing workflow, including hardware deliveries
+
 
 👉 [View project](./02-string-art-machine)
 
@@ -75,11 +86,15 @@ Industrial control system with a custom SCADA application developed in Python.
 - real-time data acquisition from PLC
 - data storage and visualization
 - custom SCADA interface
+- calibratied control system using PID regulation
 
 **What I learned:**
 - PLC–software integration
+- tuning PID controllers using the Ziegler–Nichols method
 - industrial communication protocols
-- building simple SCADA systems
+- building simple SCADA systems from scratch
+- managing database
+- designing HMI panels
 
 👉 [View project](./03-plc-python-scada-integration)
 
@@ -96,11 +111,11 @@ Extension of the string art algorithm to support full-color image processing.
 
 **Features:**
 - color-based string art generation
-- improved visual output
+- improved output quality by incorporating HSV color space
 
 **What I learned:**
 - working with color spaces
-- extending existing algorithms
+- improving algorithm output through experimentation
 
 ---
 
@@ -113,7 +128,6 @@ Collection of smaller projects developed during Boot.dev and FreeCodeCamp course
 
 **Tech stack:**
 - Python
-- basic web / backend tools
 
 **Features:**
 - fundamental programming exercises
@@ -121,8 +135,12 @@ Collection of smaller projects developed during Boot.dev and FreeCodeCamp course
 - small applications and utilities
 
 **What I learned:**
-- core programming concepts
+- core computer science and programming concepts
+- object-oriented programming
+- functional programming principles
+- data structures & algorithms
 - problem-solving and algorithmic thinking
+- integrating Gemini API to build primitive AI agent
 
 👉 [View projects](./projects-from-courses)
 
