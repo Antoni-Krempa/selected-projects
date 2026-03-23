@@ -108,8 +108,8 @@ Extension of the string art algorithm to support full-color image processing.
 Collection of smaller projects developed during Boot.dev and FreeCodeCamp courses.
 
 
-<img src="projects-from-courses/pictures/budget_app_output.png" height="350"/>
-<img src="projects-from-courses/pictures/asteroids.gif" height="350"/>
+<img src="projects-from-courses/pictures/budget_app_output.png" height="300"/>
+<img src="projects-from-courses/pictures/asteroids.gif" height="300"/>
 
 
 **Tech stack:**
