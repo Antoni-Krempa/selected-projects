@@ -6,7 +6,7 @@ Each project folder contains a detailed description, overview and visuals.
 ---
 
 ## String Art Generator
-Algorithm that converts input images into string threading instructions and visualises result.
+Algorithm that converts input images into string threading instructions and visualizes result.
 
 
 <img src="01-string-art-generator/pictures/Einstein.PNG" height="320"/> <img src="01-string-art-generator/pictures/world_map_simple.png" height="312"/>
@@ -16,12 +16,12 @@ Algorithm that converts input images into string threading instructions and visu
 - Python
 - NumPy / CuPy
 - PIL / image processing
-- tkinter
+- Tkinter
 
 **Features:**
 - two different approaches for line selection
 - GPU acceleration using CuPy
-- various precomputing methods for main loop optimazation
+- precomputation techniques for main loop optimization
 - basic GUI for user interaction
 
 **What I learned:**
@@ -29,6 +29,7 @@ Algorithm that converts input images into string threading instructions and visu
 - numerical methods and image processing
 - designing efficient algorithms
 - solving real problem
+- using callback functions for progress updates in the GUI
 
 👉 [View project](./01-string-art-generator)
 
