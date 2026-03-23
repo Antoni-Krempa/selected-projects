@@ -1,61 +1,61 @@
 # Budget App
 
-Projekt stworzony w ramach kursu **freeCodeCamp – Scientific Computing with Python**.
+Project completed as part of the **freeCodeCamp – Scientific Computing with Python** course.
 
-## Opis
+## Description
 
-Celem projektu jest stworzenie klasy `Category`, która umożliwia prowadzenie **budżetów dla różnych kategorii wydatków**, takich jak żywność, ubrania, transport itp. 
+The goal of this project is to create a `Category` class for managing **budgets across different spending categories**, such as food, clothing, transportation, and others.
 
-Dodatkowo, program generuje **tekstowy wykres słupkowy** (`create_spend_chart`), który pokazuje procentowy udział wydatków w każdej kategorii.
+In addition, the program generates a **text-based bar chart** (`create_spend_chart`) showing the percentage of spending in each category.
 
 ---
 
-## Funkcjonalność klasy `Category`
+## `Category` Class Functionality
 
-### Metody:
+### Methods
 
 - `deposit(amount, description="")`  
-  Dodaje kwotę do budżetu z opcjonalnym opisem.
+  Adds funds to the category with an optional description.
 
 - `withdraw(amount, description="")`  
-  Odejmuje kwotę z budżetu, jeśli są środki. Zwraca `True`/`False`.
+  Withdraws funds from the category if enough money is available. Returns `True` or `False`.
 
 - `get_balance()`  
-  Zwraca aktualne saldo.
+  Returns the current balance.
 
 - `transfer(amount, category)`  
-  Przesyła środki do innej kategorii budżetowej.
+  Transfers funds to another budget category.
 
 - `check_funds(amount)`  
-  Sprawdza, czy wystarczy środków.
+  Checks whether enough funds are available.
 
 - `__str__()`  
-  Zwraca reprezentację kategorii — nazwa, operacje, saldo.
+  Returns a string representation of the category, including its name, transactions, and total balance.
 
 ---
 
-## Wykres wydatków
+## Spending Chart
 
-Funkcja `create_spend_chart(categories)` generuje tekstowy wykres pokazujący procentowy udział wydatków dla każdej kategorii.
+The `create_spend_chart(categories)` function generates a text-based chart showing the percentage of total spending for each category.
 
-Przykład użycia:
+## Example
 
 ```python
-food = Category('Food')
-food.deposit(1000, 'deposit')
-food.withdraw(10.15, 'groceries')
-food.withdraw(15.89, 'restaurant and more food for dessert')
+food = Category("Food")
+food.deposit(1000, "deposit")
+food.withdraw(10.15, "groceries")
+food.withdraw(15.89, "restaurant and more food for dessert")
 
-clothing = Category('Clothing')
+clothing = Category("Clothing")
 food.transfer(50, clothing)
 
-auto = Category('Auto')
-auto.deposit(1000, 'deposit')
-auto.withdraw(500, 'repair')
+auto = Category("Auto")
+auto.deposit(1000, "deposit")
+auto.withdraw(500, "repair")
 
 print(create_spend_chart([food, clothing, auto]))
 
-Wynik:
+Output:
 *************Food*************
 deposit                1000.00
 groceries               -10.15
@@ -82,4 +82,4 @@ Percentage spent by category
      h        
      i        
      n        
-     g        
+     g 
