@@ -1,1 +1,1 @@
-
+> Note: Some of these projects were created at the beginning of my programming journey, so the code may not follow best practices. Some projects were also guided, and not all parts were implemented independently.
