@@ -122,5 +122,5 @@ Collection of smaller projects developed during Boot.dev and FreeCodeCamp course
 - core programming concepts
 - problem-solving and algorithmic thinking
 
-👉 [View project](./projects-from-courses)
+👉 [View projects](./projects-from-courses)
 
