@@ -25,8 +25,11 @@ This helps reinforce knowledge, improve retention, and build problem-solving ski
 - AI Agent
 - Bookbot
 
- 
-[my profile](https://www.boot.dev/u/malephase52)
+
+Now I am on my way to learning Golang for backend development. It will be useful for me, as my next project is building a website where users will connect to my server to perform calculations.
+
+[My Boot.dev profile](https://www.boot.dev/u/malephase52)
+
 
 
 ## What is freeCodeCamp?
