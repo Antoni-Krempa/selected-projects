@@ -53,6 +53,8 @@ A fully automated system for creating physical string art pieces.
 ## ⚙️ PLC–Python SCADA Integration
 Industrial-style control system developed during my internship at Grupa Azoty Automatyka.
 
+<img src="03-plc-python-scada-integration/pictures/control_system.jpg" width="300"/> <img src="03-plc-python-scada-integration/pictures/SCADA.jpg" width="300"/>
+
 **Tech stack:**
 - Siemens PLC (TIA Portal)
 - Python (custom SCADA)
