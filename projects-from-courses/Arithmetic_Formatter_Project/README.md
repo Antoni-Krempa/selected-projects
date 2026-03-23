@@ -17,7 +17,7 @@ The program supports addition and subtraction operations and can optionally disp
 ```python
 arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"], True)
 
-Output:
+Wynik:
   32         1      9999      523
 +  8    - 3801    + 9999    -  49
 ----    ------    ------    -----
