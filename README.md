@@ -5,84 +5,120 @@ Each project folder contains a detailed description, implementation overview and
 
 ---
 
-## String Art Generator
-Algorithm that converts input images into string threading instructions to visualisation.
+## 🔥 String Art Generator
+Algorithm that converts input images into string threading instructions.
 
+<p align="center">
+  <img src="01-string-art-generator/pictures/Einstein.PNG" width="40%"/>
+  <img src="01-string-art-generator/pictures/world_map_simple.png" width="40%"/>
+</p>
 
-<img src="01-string-art-generator/pictures/Einstein.PNG" width="300"/> <img src="01-string-art-generator/pictures/world_map_simple.png" width="450"/>
+**Tech stack:**
+- Python
+- NumPy / CuPy
+- PIL / image processing
 
-
-
-**Key features:**
-- custom algorithm for line selection 
-- separate approaches for grayscale and color processing
+**Features:**
+- custom algorithm for line selection
+- separate approaches for grayscale and color images
 - GPU acceleration using CuPy
 - basic GUI for user interaction
 
 **What I learned:**
 - performance optimization (time & memory)
 - numerical methods and image processing
-- building efficient Python applications
-
+- designing efficient algorithms
 
 👉 [View project](./01-string-art-generator)
 
 ---
 
-## String Art Machine
-My largest project, developed over 6+ months.  
-A fully automated system for creating physical string art pieces.
+## 🧠 String Art Machine
+Fully automated system for creating physical string art pieces, developed over 6+ months.
 
-<img src="02-string-art-machine/pictures/string_art_machine_1.jpg" width="400"/>
+<p align="center">
+  <img src="02-string-art-machine/pictures/string_art_machine_1.jpg" width="50%"/>
+</p>
 
-**Scope:**
-- mechanical design (CAD)
-- embedded software (C++)
-- electronics integration
-- full system assembly and testing
+**Tech stack:**
+- C++
+- Arduino / microcontrollers
+- CAD (mechanical design)
 
-**Highlights:**
-- custom-built machine for real-world use
-- integration of hardware and software
-- solving non-trivial engineering problems
+**Features:**
+- automated string winding process
+- custom-built mechanical system
+- integration of electronics and control logic
 
-👉 [View project](./string-art-machine)
+**What I learned:**
+- hardware-software integration
+- working with real-world constraints (mechanics, electronics)
+- designing complete engineering systems
+
+👉 [View project](./02-string-art-machine)
 
 ---
 
-## PLC Python SCADA Integration
-Industrial-style control system developed during my internship at Grupa Azoty Automatyka.
+## ⚙️ PLC–Python SCADA Integration
+Industrial control system with a custom SCADA application developed in Python.
 
-<img src="03-plc-python-scada-integration/pictures/control_system.jpg" width="300"/> <img src="03-plc-python-scada-integration/pictures/SCADA.png" width="300"/>
+<p align="center">
+  <img src="03-plc-python-scada-integration/pictures/control_system.jpg" width="40%"/>
+  <img src="03-plc-python-scada-integration/pictures/SCADA.png" width="40%"/>
+</p>
 
 **Tech stack:**
 - Siemens PLC (TIA Portal)
-- Python (custom SCADA)
+- Python
 - SQL database
-- snap7 communication
+- snap7
 
 **Features:**
 - real-time data acquisition from PLC
 - data storage and visualization
-- custom HMI/SCADA interface
+- custom SCADA interface
 
-👉 [View project](./plc-python-scada-integration)
+**What I learned:**
+- PLC–software integration
+- industrial communication protocols
+- building simple SCADA systems
+
+👉 [View project](./03-plc-python-scada-integration)
 
 ---
 
-## Coloured String Art
+## 🎨 Coloured String Art
+Extension of the string art algorithm to support full-color image processing.
 
+**Tech stack:**
+- Python
+- NumPy / CuPy
 
+**Features:**
+- color-based string art generation
+- improved visual output
 
-## Projects from Courses
-Collection of smaller projects developed while completing Boot.dev and FreeCodeCamp courses.
+**What I learned:**
+- working with color spaces
+- extending existing algorithms
 
-**Includes:**
+---
+
+## 🧪 Projects from Courses
+Collection of smaller projects developed during Boot.dev and FreeCodeCamp courses.
+
+**Tech stack:**
+- Python
+- basic web / backend tools
+
+**Features:**
 - fundamental programming exercises
 - data structures & algorithms
-- API and backend basics
+- small applications and utilities
 
-> Note: some projects are guided and focus on learning fundamentals rather than production-level code.
+**What I learned:**
+- core programming concepts
+- problem-solving and algorithmic thinking
 
 👉 [View project](./projects-from-courses)
 
