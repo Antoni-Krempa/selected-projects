@@ -24,3 +24,13 @@ This helps reinforce knowledge, improve retention, and build problem-solving ski
 - Asteroids
 - AI Agent
 - Bookbot
+
+
+## What is freeCodeCamp?
+
+[freeCodeCamp](https://www.freecodecamp.org) is a widely recognized platform offering structured programming courses with a strong focus on practical projects.
+
+Courses are built around real-world tasks and require completing projects to pass each section.  
+This approach ensures not only understanding of theory, but also the ability to apply it in practice.
+
+The projects included in this repository were completed as part of the **Scientific Computing with Python** certification.
