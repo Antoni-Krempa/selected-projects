@@ -88,6 +88,8 @@ Industrial control system with a custom SCADA application developed in Python.
 ## Coloured String Art
 Extension of the string art algorithm to support full-color image processing.
 
+<img src="04-coloured-string-art/pictures/tiger5.png" width="40%"/>
+
 **Tech stack:**
 - Python
 - NumPy / CuPy
