@@ -19,7 +19,6 @@ Algorithm that converts input images into string threading instructions, support
 - numerical methods and image processing
 - building efficient Python applications
 
-![selected-projects](01-string-art-generator/pictures/Einstein.PNG)
 <img src="01-string-art-generator/pictures/Einstein.PNG" width="400"/>
 
 👉 [View project](./01-string-art-generator)
