@@ -5,7 +5,7 @@
 Algorithm that converts input images into string threading instructions and visualizes result.
 
 
-<img src="pictures/world_map.gif" height="320"/> 
+<img src="pictures/world_map_clear.gif" height="500"/> 
 
 
 
