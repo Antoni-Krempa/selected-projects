@@ -46,3 +46,24 @@ Now, in the main loop, new lines are easily accessible, enabling parallel additi
 - designing efficient algorithms
 - solving real problem
 - using callback functions for progress updates in the GUI
+
+
+**Second method**
+
+With second developed approach I was able to reduce computing time to 2-3 minutes with much better results. Here are some of the outputs:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
