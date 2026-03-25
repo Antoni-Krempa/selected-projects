@@ -16,7 +16,7 @@ Algorithm that converts input images into string threading instructions. Two app
 This approach was the first thing i came up with while thinking of solution. I use different approach right now but it has potential after further optimalizations and modifications to give solutions for the photos that second algorithm would't be able to recreate. Either way i was massively useful to develop as i learned whole bunch of practiccal knowledge of time and space optimalizations by different methods like parrarel computing using GPUs, broadccating, preccomputing, compresing arrays to sparse matricies and decompresing and more. Here are some of the outputs:
 
 
-<img src="pictures/dog.png" height="350"/>  <img src="pictures/cat.png" height="350"/> 
+<img src="pictures/dog.png" height="400"/>  <img src="pictures/cat.png" height="400"/> 
 
 
 Basic idea is to have a blank sheet and create points that are equally spaced on a circumstance of a circle. Then one point is chosen as a first one and a line is written to every possible connection with that point and the best one is chosen by comparing current canvas to orignal photo with MSE. As one can see it means whole bunch of comapasions are made during a run. For 3000 line piece with 200 points there are 600 000 MSE comparasions with really high resolution images.
