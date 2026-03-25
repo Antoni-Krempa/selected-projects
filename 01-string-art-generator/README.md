@@ -13,24 +13,19 @@ Algorithm that converts input images into string threading instructions. Two app
 
 **First method**
 
-This approach was the first thing i came up with while thinking of solution. I use different approach right now but it has potential after further optimalizations and modifications to give solutions for the photos that second algorithm would't be able to recreate. Either way i was massively useful to develop as i learned whole bunch of practiccal knowledge of time and space optimalizations by different methods like parrarel computing using GPUs, broadccating, preccomputing, compresing arrays to sparse matricies and decompresing and more. Here are some of the outputs:
+This approach was the first thing I came up with while thinking of a solution. I use a different approach right now, but it still has potential, after further optimizations and modifications, to give results for photos that the second algorithm wouldn’t be able to recreate. Either way, it was massively useful to develop, as I learned a whole bunch of practical knowledge about time and space optimizations using different methods like parallel computing on GPUs, broadcasting, precomputing, compressing arrays to sparse matrices and decompressing, and more. Here are some of the outputs:
 
+<img src="pictures/dog.png" height="400"/> <img src="pictures/cat.png" height="400"/>
 
-<img src="pictures/dog.png" height="400"/>  <img src="pictures/cat.png" height="400"/> 
+The basic idea is to have a blank canvas and create points that are equally spaced on the circumference of a circle. Then one point is chosen as the starting point, and a line is drawn to every possible connection with that point. The best one is selected by comparing the current canvas to the original photo using MSE. As one can see, this means a huge number of comparisons are made during a run. For a 3000-line piece with 200 points, there are 600,000 MSE comparisons on high-resolution images.
 
+At first, iterations of the algorithm would take days, then hours, and I was finally able to reduce it to about 20 minutes on my computer — which is still quite slow, but at least usable. This improvement was mostly thanks to performing the comparison in the inner loop, where we check for the best line from 200 possibilities. Instead of checking them iteratively, all 200 possibilities are evaluated at once using the GPU. So instead of performing 200 calculations sequentially on the CPU in each iteration, they are done roughly in parallel on the GPU.
 
-Basic idea is to have a blank sheet and create points that are equally spaced on a circumstance of a circle. Then one point is chosen as a first one and a line is written to every possible connection with that point and the best one is chosen by comparing current canvas to orignal photo with MSE. As one can see it means whole bunch of comapasions are made during a run. For 3000 line piece with 200 points there are 600 000 MSE comparasions with really high resolution images.
+This method requires a setup phase. All possible line images need to be precomputed so they can be quickly used in the main loop. It is best described by the diagram below:
 
-At first iterations an algorithm would complete in days then hours and i was finally able to make it to abut 20 minutes which still is horrible but at least it was useble. It mostly thanks to making comparasion in inner loop where we check for the best line from 200 possibilities. Instead of checking it iteratively it checks it all at the same time using GPU so instead of having 200 calculations on CPU each iteration 200 calculations are made at roughly the same time on GPU.
+<img src="pictures/setup.png" height="800"/>
 
-This method requires setup. All possible line pictures need to be precomputed to be quicly used in main loop. 
-
-
-
-
-
-
-<img src="pictures/setup.png" height="800"/> 
+Now, in the main loop, new lines are easily accessible, enabling parallel addition of potential lines to the canvas and comparison with the original image. The parallel computation was actually split into two batches because I didn’t have enough GPU memory to compute everything at once.
 
 
 **Tech stack:**
