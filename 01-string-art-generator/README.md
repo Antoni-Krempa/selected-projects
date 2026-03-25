@@ -27,26 +27,6 @@ This method requires a setup phase. All possible line images need to be precompu
 
 Now, in the main loop, new lines are easily accessible, enabling parallel addition of potential lines to the canvas and comparison with the original image. The parallel computation was actually split into two batches because I didn’t have enough GPU memory to compute everything at once.
 
-
-**Tech stack:**
-- Python
-- NumPy / CuPy
-- PIL / image processing
-- Tkinter
-
-**Features:**
-- two different approaches for line selection
-- GPU acceleration using CuPy
-- precomputation techniques for main loop optimization
-- basic GUI for user interaction
-
-**What I learned:**
-- performance optimization (time & memory)
-- numerical methods and image processing
-- designing efficient algorithms
-- solving real problem
-- using callback functions for progress updates in the GUI
-
 ---
 **Second method**
 
@@ -57,7 +37,9 @@ With second developed approach I was able to reduce computing time to 2-3 minute
 ---
 **GUI**
 
-A simple GUI was made to
+A simple GUI was made to make it easier for user to experiment with different pictures and parameters. It was made using Tkinter library. The timelapse effect was achieved using a custom callback function triggered from the main algorithm loop. Every few iterations (e.g. every 10 lines), the current state of the image is passed to the GUI, which updates the display.
+
+<img src="pictures/GUI.png" height="700"/>
 
 
 
