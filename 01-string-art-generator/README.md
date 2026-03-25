@@ -54,6 +54,11 @@ With second developed approach I was able to reduce computing time to 2-3 minute
 
 <img src="pictures/eye.png" height="300"/> <img src="pictures/pearl.png" height="300"/> <img src="pictures/Einstein.PNG" height="300"/>
 
+---
+**GUI**
+
+A simple GUI was made to
+
 
 
 
