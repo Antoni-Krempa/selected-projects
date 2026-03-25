@@ -1,0 +1,12 @@
+import pickle
+from setup import *
+
+def lines_base():
+    data = set_up(r"C:\Users\akrem\Desktop\FOTY INŻYNIERKA\kolczyk.jpg",w_times = 2)
+
+    with open("cache.pkl", "wb") as f:
+        pickle.dump(data, f)
+    print("Zapisano dane do cache.pkl")
+
+lines_base()
+
