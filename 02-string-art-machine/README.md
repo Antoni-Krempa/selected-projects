@@ -25,7 +25,7 @@ The design phase was one of the most challenging parts of the project. First, I 
 
 Here is the full assembly model created in CAD software:
 
-<img src="pictures/cad_model.png" height="500"/>
+<img src="pictures/CAD_model.png" height="500"/>
 
 ---
 
@@ -35,25 +35,27 @@ There were many different components that needed to be purchased, and I had to f
 
 At first, I used a small open-loop NEMA 17 stepper motor with a DRV8825 driver.
 
-<img src="pictures/nema17.jpg" height="300"/>
+<img src="pictures/DRV8825.png" height="300"/>
 
 However, it had too little torque to overcome irregularities in the gear system.
 
 Then I switched to a stronger open-loop NEMA 23 stepper motor with a DM542 driver.
 
-<img src="pictures/nema23.jpg" height="300"/>
+<img src="pictures/DM542.png" height="300"/>
 
 This setup worked much better — the torque was more than sufficient and the driver allowed for smooth operation — but the system still occasionally lost steps.
 
 Finally, I decided to use a more advanced servo-stepper system, which includes an encoder and a built-in dedicated driver.
 
-<img src="pictures/servo_stepper.jpg" height="300"/>
+<img src="pictures/servo_stepper.png" height="300"/>
 
 This solution ultimately allowed the system to operate reliably and achieve the desired performance.
 
 In addition, I had to purchase many other components such as a DC motor with custom collets (used as a screwdriver), a motor driver, elements for building guide rails for both drilling and winding stations, hobby servos, as well as numerous screws, cables, and other hardware.
 
 All electrical components were connected according to a designed electrical scheme shown below:
+
+<img src="pictures/electrical_scheme.png" height="700"/>
 
 
 
