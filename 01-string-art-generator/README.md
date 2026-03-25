@@ -1,4 +1,4 @@
-<img width="761" height="680" alt="image" src="https://github.com/user-attachments/assets/1135392d-494c-4883-aa6e-767a2e833947" />> Note: Some parts of this project and its underlying know-how are not publicly available, as they are intended for future commercial use.
+> Note: Some parts of this project and its underlying know-how are not publicly available, as they are intended for future commercial use.
 
 
 ## String Art Generator
