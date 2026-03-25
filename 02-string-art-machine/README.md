@@ -58,7 +58,7 @@ All electrical components were connected according to a designed electrical sche
 <img src="pictures/electrical_scheme.png" height="700"/>
 
 
-
+---
 
 
 **Microcontroller Software & Control**
@@ -70,7 +70,7 @@ To address this, a ramp was implemented — longer delays between impulses durin
 The DC motor used for drilling was rated for 24V, but direct 24V control was too aggressive and caused the wood to burn. Therefore, it was controlled using a PWM signal to regulate the effective voltage with saturation limits. A timer register was also modified to increase the PWM frequency, as the default Arduino settings were too low and caused the motor to behave in a turbulent and noisy performance.
 
 
-
+---
 
 **Workflow Management**
 
@@ -80,7 +80,16 @@ Since I could only work on the machine during weekends at home (and not in the d
 
 The result was a fully functional system and a 90-page engineering thesis containing a lot of valuable content.
 
+---
 
 
+
+**Results**
+
+A repetitive process that would take 10+ hours to complete manually is now fully automated and significantly faster (around 2 hours).
+
+The system operates reliably and consistently, producing repeatable results without manual intervention.
+
+<img src="pictures/final_result_1" height="400"/> <img src="pictures/final_result_2" height="400"/>
 
 
