@@ -53,7 +53,7 @@ Now, in the main loop, new lines are easily accessible, enabling parallel additi
 With second developed approach I was able to reduce computing time to 2-3 minutes with much better results. Here are some of the outputs:
 
 <img src="pictures/eye.png" height="400"/> <img src="pictures/pearl.png" height="400"/> 
-<img src="pictures/world_map_simple.png" height="400"/> <img src="pictures/Einstein.png" height="400"/>
+<img src="pictures/world_map_simple.png" height="400"/> <img src="pictures/Einstein.PNG" height="400"/>
 
 
 
