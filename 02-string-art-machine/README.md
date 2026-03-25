@@ -1,64 +1,84 @@
-
-
 > Note: Some parts of this project and its underlying know-how are not publicly available, as they are intended for future commercial use.
 
-
-## String Art Machine
-
-A machine that automates drilling and winding processes to create physical string art pieces. Self developed for engineering thesis at AGH university. 
-
-
-<img src="pictures/winding_gif.gif" height="500"/>
-
-The porject could be split to four parts: 
-Design / Electrical scheme & parts/ microcontroler software & control / managing workflow 
+> Note: This is a stripped-down description of the project – there was a lot more content that simply wouldn’t fit here.
 
 ---
 
+## String Art Machine
+
+A machine that automates drilling and winding processes to create physical string art pieces. It was developed as part of my engineering thesis at AGH University.
+
+It works by controlling a stepper motor which precisely rotates the frame on which a wooden canvas is mounted. There are two stations: one for drilling holes (to insert nails) and one for winding thread around those nails. The system is controlled using a stepper motor, hobby servos, and dedicated controllers.
+
+<img src="pictures/winding_gif.gif" height="500"/>
+
+The project can be divided into four main parts:
+- design  
+- electrical scheme & components  
+- microcontroller software & control  
+- workflow management 
+---
+
 **Design**
-The designing part was one of the most difficult one. First i had to come up with general concept. I was watching videos of people who built such machines themselves and inspired myself by their creations and solutions. Even with that it was really difficult to come up with my own design. Everything had to work, be cheap and possible to assemble. the last part is crucial as i struck myself sometimes creating solutions that look great on the screen but arent really possuble to assemble in real life. I had to CAD design every part with barring in mind that they will be manufactured using 3D printing or CNC milling technologies. A lot of mistakes were made in this journey but this is how i learned the hardships of coming up with design. Here is full assembly of a model:
 
-fota modelu
+The design phase was one of the most challenging parts of the project. First, I had to come up with a general concept, so I watched videos of people who built similar machines and drew inspiration from their solutions. Even with that, it was still difficult to develop my own design, as everything had to work together, be cost-effective, and possible to assemble. The last part was crucial, as I often found myself creating solutions that looked great in CAD but were not feasible to assemble in real life. I had to design every part in CAD, keeping in mind that they would be manufactured using 3D printing or CNC machining technologies. Many mistakes were made along the way, but that is how I learned the real challenges of designing functional systems.
 
+Here is the full assembly model created in CAD software:
 
+<img src="pictures/cad_model.png" height="500"/>
 
 ---
 
 **Electrical scheme & parts**
 
-There were a bunch of different elements that needed to be bought and i had to come up with what i need 
+There were many different components that needed to be purchased, and I had to figure out what exactly I needed and how to connect everything together. I went through a long process of testing various stepper motors and dedicated drivers that turned out not to be suitable for this project. 
+
+At first, I used a small open-loop NEMA 17 stepper motor with a DRV8825 driver.
+
+<img src="pictures/nema17.jpg" height="300"/>
+
+However, it had too little torque to overcome irregularities in the gear system.
+
+Then I switched to a stronger open-loop NEMA 23 stepper motor with a DM542 driver.
+
+<img src="pictures/nema23.jpg" height="300"/>
+
+This setup worked much better — the torque was more than sufficient and the driver allowed for smooth operation — but the system still occasionally lost steps.
+
+Finally, I decided to use a more advanced servo-stepper system, which includes an encoder and a built-in dedicated driver.
+
+<img src="pictures/servo_stepper.jpg" height="300"/>
+
+This solution ultimately allowed the system to operate reliably and achieve the desired performance.
+
+In addition, I had to purchase many other components such as a DC motor with custom collets (used as a screwdriver), a motor driver, elements for building guide rails for both drilling and winding stations, hobby servos, as well as numerous screws, cables, and other hardware.
+
+All electrical components were connected according to a designed electrical scheme shown below:
 
 
 
 
 
-**First method**
+**Microcontroller Software & Control**
 
-This approach was the first thing I came up with while thinking of a solution. I use a different approach right now, but it still has potential, after further optimizations and modifications, to give results for photos that the second algorithm wouldn’t be able to recreate. Either way, it was massively useful to develop, as I learned a whole bunch of practical knowledge about time and space optimizations using different methods like parallel computing on GPUs, broadcasting, precomputing, compressing arrays to sparse matrices and decompressing, and more. Here are some of the outputs:
+When controlling a stepper motor, it is the programmer who defines how fast the motor moves. The shorter the time between impulses, the faster the motor rotates, but the programmer must take into account the motor limitations and the characteristics of the system it is driving. In this case, the driven object has a large inertia, as it is a heavy wooden disc. This means that acceleration requires significantly more torque, while maintaining constant speed requires much less.
 
-<img src="pictures/dog.png" height="400"/> <img src="pictures/cat.png" height="400"/>
+To address this, a ramp was implemented — longer delays between impulses during acceleration and deceleration phases, and shorter delays during constant speed. The system was also programmed to precisely move from one pin to another based on instructions generated by the line algorithm, while synchronizing with hobby servos during the winding process.
 
-The basic idea is to have a blank canvas and create points that are equally spaced on the circumference of a circle. Then one point is chosen as the starting point, and a line is drawn to every possible connection with that point. The best one is selected by comparing the current canvas to the original photo using MSE. As one can see, this means a huge number of comparisons are made during a run. For a 3000-line piece with 200 points, there are 600,000 MSE comparisons on high-resolution images.
+The DC motor used for drilling was rated for 24V, but direct 24V control was too aggressive and caused the wood to burn. Therefore, it was controlled using a PWM signal to regulate the effective voltage with saturation limits. A timer register was also modified to increase the PWM frequency, as the default Arduino settings were too low and caused the motor to behave in a turbulent and noisy performance.
 
-At first, iterations of the algorithm would take days, then hours, and I was finally able to reduce it to about 20 minutes on my computer — which is still quite slow, but at least usable. This improvement was mostly thanks to performing the comparison in the inner loop, where we check for the best line from 200 possibilities. Instead of checking them iteratively, all 200 possibilities are evaluated at once using the GPU. So instead of performing 200 calculations sequentially on the CPU in each iteration, they are done roughly in parallel on the GPU.
 
-This method requires a setup phase. All possible line images need to be precomputed so they can be quickly used in the main loop. It is best described by the diagram below:
 
-<img src="pictures/setup.png" height="800"/>
 
-Now, in the main loop, new lines are easily accessible, enabling parallel addition of potential lines to the canvas and comparison with the original image. The parallel computation was actually split into two batches because I didn’t have enough GPU memory to compute everything at once.
+**Workflow Management**
 
----
-**Second method**
+As I was working under a deadline to complete this project, I had to create a schedule to keep everything moving efficiently. I organized the workflow to align with part deliveries and overall progress.
 
-With the second developed approach, I was able to reduce computation time to around 2–3 minutes while achieving much better results. There is still a lot of room for improvement, which I am currently working on. Here are some of the outputs:
+Since I could only work on the machine during weekends at home (and not in the dormitory), I used the remaining time to design parts, make purchases, develop software, and think through solutions to current challenges.
 
-<img src="pictures/eye.png" height="300"/> <img src="pictures/pearl.png" height="300"/> <img src="pictures/Einstein.PNG" height="300"/>
+The result was a fully functional system and a 90-page engineering thesis containing a lot of valuable content.
 
----
-**GUI**
 
-A simple GUI was made to make it easier for user to experiment with different pictures and parameters. It was made using Tkinter library. The timelapse effect was achieved using a custom callback function triggered from the main algorithm loop. Every few iterations (e.g. every 10 lines), the current state of the image is passed to the GUI, which updates the display.
 
-<img src="pictures/GUI.png" height="700"/>
+
 
