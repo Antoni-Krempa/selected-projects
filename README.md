@@ -47,6 +47,7 @@ Fully automated system for creating physical string art pieces, developed over 6
 - Arduino / microcontrollers
 - CAD designing
 - KiCad
+- Stepper motors / stepper motors drivers
 
 **Features:**
 - automated string winding and hole drilling process
