@@ -121,6 +121,7 @@ Extension of the string art algorithm to support full-color image processing.
 - improving algorithm output through experimentation
 
 👉 [View project](./04-coloured-string-art)
+
 ---
 
 ## Projects from Courses
