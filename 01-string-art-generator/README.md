@@ -30,7 +30,7 @@ Now, in the main loop, new lines are easily accessible, enabling parallel additi
 ---
 **Second method**
 
-With second developed approach I was able to reduce computing time to 2-3 minutes with much better results. Here are some of the outputs:
+With the second developed approach, I was able to reduce computation time to around 2–3 minutes while achieving much better results. There is still a lot of room for improvement, which I am currently working on. Here are some of the outputs:
 
 <img src="pictures/eye.png" height="300"/> <img src="pictures/pearl.png" height="300"/> <img src="pictures/Einstein.PNG" height="300"/>
 
