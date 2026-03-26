@@ -1,0 +1,11 @@
+type,DB_number,start_byte,byte_length,bit_number,name,unit,mode,show_plot
+real,1,0,4,,Temperatura,°C,r,
+real,1,14,4,,Setpoint,°C,rw,
+real,1,18,4,,PWM,%,r,
+bool,1,8,2,4,ON_OFF,,rw,
+bool,1,8,2,3,Automatic/Manual,,rw,
+real,1,36,4,,Manual Value,%,rw,
+real,1,24,4,,P,,rw,0
+real,1,28,4,,I,,rw,0
+real,1,32,4,,D,,rw,0
+
