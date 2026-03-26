@@ -23,4 +23,4 @@ A simple SQL database was also added to store process values over time. This all
 <img src="pictures/HMI.jpg" height="600"/>
 
 
-<img src="pictures/SCADA.png" height="600"/>
+<img src="pictures/scada_gif.gif" height="600"/>
