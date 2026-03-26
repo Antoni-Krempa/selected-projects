@@ -88,7 +88,6 @@ The result was a fully functional system and a 90-page engineering thesis contai
 
 A repetitive process that would take 10+ hours to complete manually is now fully automated and significantly faster (around 2 hours).
 
-The system operates reliably and consistently, producing repeatable results without manual intervention.
 
 <img src="pictures/final_result_1.jpg" height="400"/> <img src="pictures/final_result_2.jpg" height="400"/>
 
