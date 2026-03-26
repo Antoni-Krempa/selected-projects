@@ -9,3 +9,5 @@ Due to its experimental and ongoing nature, the implementation details are not p
 This project is currently under active development, with the goal of significantly improving visual quality and efficiency.
 
 Future plans include designing and building a dedicated machine capable of automatically creating full-color string art pieces.
+
+<img src="pictures/tiger5.png" height="600"/>
