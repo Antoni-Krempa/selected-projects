@@ -17,3 +17,8 @@ The whole application was built using object-oriented programming. Variable defi
 
 A simple SQL database was also added to store process values over time. This allowed the SCADA application not only to display live data, but also to visualize historical trends.
 
+<img src="03-plc-python-scada-integration/pictures/control_system.jpg" height="320"/> <img src="03-plc-python-scada-integration/pictures/control_system.jpg" height="320"/>
+
+<img src="03-plc-python-scada-integration/pictures/control_system.jpg" height="320"/>
+
+<img src="03-plc-python-scada-integration/pictures/control_system.jpg" height="320"/>
