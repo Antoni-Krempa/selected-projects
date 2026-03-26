@@ -19,6 +19,6 @@ A simple SQL database was also added to store process values over time. This all
 
 <img src="03-plc-python-scada-integration/pictures/control_system.jpg" height="320"/> <img src="03-plc-python-scada-integration/pictures/control_system.jpg" height="320"/>
 
-<img src="03-plc-python-scada-integration/pictures/control_system.jpg" height="320"/>
+<img src="pictures/control_system.jpg" height="320"/>
 
 <img src="03-plc-python-scada-integration/pictures/control_system.jpg" height="320"/>
