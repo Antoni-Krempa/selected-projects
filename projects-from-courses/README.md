@@ -26,7 +26,7 @@ This helps reinforce knowledge, improve retention, and build problem-solving ski
 - Bookbot
 
 
-Now I am on my way to learning Golang for backend development. It will be useful for me, as my next project is building a website where users will connect to my server to perform calculations.
+I am currently learning Go for backend development, as it will be useful for my next project: building a website for my shop where users will be able to order personalized string art pieces based on their own photos. Users will upload their images to the server, which will then generate a string art visualization.
 
 [My Boot.dev profile](https://www.boot.dev/u/malephase52)
 
